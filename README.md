@@ -41,29 +41,44 @@ ImageHive is a FastAPI-based backend with a TypeScript React frontend, designed 
 
 ### Prerequisites
 
-- Python 3.9 or higher
+- Python 3.11.4
 - Node.js 18 or higher
 - npm or yarn
 
 ### Backend Setup
 
-1. Navigate to the backend directory:
+#### Configuration
+
+1. Install Python 3.11.4 using pyenv (if not already installed):
+    ```shell
+    # macOS: install pyenv (Homebrew)
+    brew update
+    brew install pyenv
+    
+    # Install Python 3.11.4
+    pyenv install 3.11.4
+    pyenv local 3.11.4
+    pyenv rehash
+    eval "$(pyenv init -)"
+    ```
+
+2. Navigate to the backend directory:
    ```bash
    cd backend
    ```
 
-2. Create and activate a virtual environment:
+3. Create and activate a virtual environment:
    ```bash
    python -m venv venv
    source venv/bin/activate  # On Windows: venv\Scripts\activate
    ```
 
-3. Install dependencies:
+4. Install dependencies:
    ```bash
    pip install -r requirements.txt
    ```
 
-4. Run the development server:
+5. Run the development server:
    ```bash
    python main.py
    ```
