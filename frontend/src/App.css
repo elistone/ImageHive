@@ -1,0 +1,152 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.App-header {
+  margin-bottom: 3rem;
+}
+
+.App-header h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+}
+
+.App-main {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.status-section {
+  background: #1a1a1a;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.status-section button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #646cff;
+  color: white;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  margin: 1rem 0;
+}
+
+.status-section button:hover:not(:disabled) {
+  border-color: #646cff;
+  background-color: #535bf2;
+}
+
+.status-section button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.error {
+  background-color: #ff4444;
+  color: white;
+  padding: 1rem;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+
+.error-hint {
+  font-size: 0.9em;
+  opacity: 0.9;
+  margin-top: 0.5rem;
+}
+
+.status-info {
+  background-color: #44ff44;
+  color: #000;
+  padding: 1rem;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+
+.features-section h2 {
+  margin-bottom: 1.5rem;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.feature-card {
+  background: #1a1a1a;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #333;
+  transition: border-color 0.3s;
+}
+
+.feature-card:hover {
+  border-color: #646cff;
+}
+
+.feature-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.2em;
+}
+
+.feature-card p {
+  margin: 0;
+  opacity: 0.8;
+  font-size: 0.9em;
+}
+
+.App-footer {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid #333;
+  opacity: 0.6;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  
+  .status-section,
+  .feature-card {
+    background: #f9f9f9;
+    border-color: #e0e0e0;
+  }
+  
+  .feature-card:hover {
+    border-color: #646cff;
+  }
+  
+  .App-footer {
+    border-top-color: #e0e0e0;
+  }
+}
